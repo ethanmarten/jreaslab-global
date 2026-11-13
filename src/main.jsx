@@ -1,0 +1,18 @@
+import {StrictMode} from 'react';
+import {createRoot,hydrateRoot} from 'react-dom/client';
+import {BrowserRouter} from 'react-router-dom';
+import {I18nextProvider} from 'react-i18next';
+import {createI18n} from './i18n';
+import App from './App';
+import '@fontsource/ibm-plex-sans-arabic/arabic-400.css';
+import '@fontsource/ibm-plex-sans-arabic/arabic-500.css';
+import '@fontsource/ibm-plex-sans-arabic/arabic-600.css';
+import '@fontsource/dm-sans/latin-400.css';
+import '@fontsource/dm-sans/latin-500.css';
+import '@fontsource/dm-sans/latin-600.css';
+import './styles/global.css';
+import './styles/project-art.css';
+const lang=window.location.pathname.startsWith('/en')?'en':'ar';
+const app=<StrictMode><I18nextProvider i18n={createI18n(lang)}><BrowserRouter><App/></BrowserRouter></I18nextProvider></StrictMode>;
+const root=document.getElementById('root');
+if(root.hasChildNodes()&&!root.innerHTML.includes('<!--app-->'))hydrateRoot(root,app);else createRoot(root).render(app);
