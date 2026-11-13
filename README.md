@@ -91,3 +91,5 @@ Import this repository as a **new** Vite project. Branch `main`, build `npm run 
 ## Asset rights
 
 Brand assets belong to Jreas Lab. No reference-site images, code or brand assets were copied. Three concept interface illustrations are original CSS compositions; dashboard figures are sample data. Font licenses are bundled by their Fontsource packages (IBM Plex OFL, DM Sans OFL); Lucide uses ISC, Motion MIT. This repository does not grant ownership of Jreas Lab trademarks to third parties.
+
+A separate, unlinked `/__review` page provides 360/390/768/1366/1920px iframe viewports and an on-demand axe accessibility check for maintainers. It is noindex, excluded from the sitemap, and its audit code is loaded separately from the public website. It contains no privileged tools or private data.

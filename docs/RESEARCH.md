@@ -2,7 +2,7 @@
 
 ## Sources inspected
 
-Official https://jreaslab.com/ar and identity https://jreaslab.vercel.app/; read-only repository https://github.com/ethanmarten/jreaslab. The current wordmark SVG was retrieved from the latter deployed site's `assets/img/logo.svg`. Kept the original vector paths and brand teal/cyan; dark variant changes the white wordmark fill only. Favicon uses the original symbol's viewBox, without redrawing it.
+Official https://jreaslab.com/ar and identity https://jreaslab.vercel.app/; read-only repository https://github.com/ethanmarten/jreaslab. The current wordmark SVG was retrieved from the latter deployed site's `assets/img/logo.svg`. Kept the original vector paths and brand teal/cyan, removing misplaced per-letter animation transforms that clipped the source wordmark; dark variant changes the white wordmark fill only. Favicon uses the original symbol's viewBox, without redrawing it.
 
 Official contact: info@jreaslab.com, +970597747340. Social URLs were observed on the identity site's footer: LinkedIn jreas-lab1, Instagram jreas_lab, X JreasLab. No claims about offices, customer counts, awards or international clients.
 

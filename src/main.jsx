@@ -15,4 +15,4 @@ import './styles/project-art.css';
 const lang=window.location.pathname.startsWith('/en')?'en':'ar';
 const app=<StrictMode><I18nextProvider i18n={createI18n(lang)}><BrowserRouter><App/></BrowserRouter></I18nextProvider></StrictMode>;
 const root=document.getElementById('root');
-if(root.hasChildNodes()&&!root.innerHTML.includes('<!--app-->'))hydrateRoot(root,app);else createRoot(root).render(app);
+if(!document.querySelector('meta[name="robots"][content^="noindex"]')&&root.hasChildNodes()&&!root.innerHTML.includes('<!--app-->'))hydrateRoot(root,app);else createRoot(root).render(app);
