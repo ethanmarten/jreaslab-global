@@ -1,4 +1,36 @@
-import {useLocale} from '../hooks/useLocale';
-import {PageHeading,Arrow} from '../components/ui/Elements';
-import ContactForm from '../components/sections/ContactForm';
-export default function ContactPage(){const {t}=useLocale();return <><PageHeading eyebrow={t('contact.eyebrow')} title={t('contact.title')} description={t('contact.description')}/><section className="container contact-layout page-content"><div className="contact-copy"><span className="eyebrow"><i/>{t('contact.direct')}</span><a className="contact-email" href="mailto:info@jreaslab.com">info@jreaslab.com<Arrow/></a><a className="text-link" href="https://wa.me/970597747340">{t('common.whatsapp')}<Arrow/></a><a className="phone-link" href="tel:+970597747340" dir="ltr">+970 597 747 340</a><p className="contact-expectation">{t('contact.response')}</p></div><ContactForm/></section></>;}
+import { useLocale } from "../hooks/useLocale";
+import { PageHeading, Arrow } from "../components/ui/Elements";
+import ContactForm from "../components/sections/ContactForm";
+export default function ContactPage() {
+  const { t } = useLocale();
+  return (
+    <>
+      <PageHeading
+        eyebrow={t("contact.eyebrow")}
+        title={t("contact.title")}
+        description={t("contact.description")}
+      />
+      <section className="container contact-layout page-content">
+        <div className="contact-copy">
+          <span className="eyebrow">
+            <i />
+            {t("contact.direct")}
+          </span>
+          <a className="contact-email" href="mailto:info@jreaslab.com">
+            info@jreaslab.com
+            <Arrow />
+          </a>
+          <a className="text-link" href="https://wa.me/970597747340">
+            {t("common.whatsapp")}
+            <Arrow />
+          </a>
+          <a className="phone-link" href="tel:+970597747340" dir="ltr">
+            +970 597 747 340
+          </a>
+          <p className="contact-expectation">{t("contact.response")}</p>
+        </div>
+        <ContactForm />
+      </section>
+    </>
+  );
+}

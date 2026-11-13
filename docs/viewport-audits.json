@@ -1,0 +1,46 @@
+[
+  {
+    "page": "/ar",
+    "viewport": 360,
+    "scrollWidth": 345,
+    "violations": [],
+    "passes": 28
+  },
+  {
+    "page": "/ar",
+    "viewport": 768,
+    "scrollWidth": 753,
+    "violations": [],
+    "passes": 28
+  },
+  {
+    "page": "/ar",
+    "viewport": 1366,
+    "scrollWidth": 1351,
+    "violations": [],
+    "passes": 28
+  },
+  {
+    "page": "/ar",
+    "viewport": 1920,
+    "scrollWidth": 1905,
+    "violations": [],
+    "passes": 28
+  },
+  {
+    "page": "/ar",
+    "final": true,
+    "viewport": 390,
+    "scrollWidth": 375,
+    "violations": [],
+    "passes": 28
+  },
+  {
+    "page": "/en",
+    "final": true,
+    "viewport": 390,
+    "scrollWidth": 375,
+    "violations": [],
+    "passes": 28
+  }
+]

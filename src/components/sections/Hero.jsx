@@ -1,7 +1,97 @@
-import {Link} from 'react-router-dom';
-import {ArrowDown,Code2,MousePointer2,Layers} from 'lucide-react';
-import {motion} from 'motion/react';
-import {useLocale} from '../../hooks/useLocale';
-import {Button,Arrow} from '../ui/Elements';
-import styles from './Hero.module.css';
-export default function Hero(){const {t,path,lang}=useLocale();return <section className={`${styles.hero} container`}><div className={styles.topline}><span className="eyebrow"><i/>{t('hero.eyebrow')}</span><span className={styles.edition}>01 — JREAS LAB</span></div><div className={styles.grid}><div className={styles.copy}><motion.h1 initial={{y:12}} animate={{y:0}}><span>{t('hero.line1')}</span><span className={styles.accent}>{t('hero.line2')}<span className={styles.star} aria-hidden="true">✳︎</span></span></motion.h1><p>{t('hero.description')}</p><div className={styles.buttons}><Button to={path('/contact')}>{t('common.start')}</Button><Link className="text-link" to={path('/work')}>{t('common.allWork')}<Arrow/></Link></div><div className={styles.note}><span className={styles.noteLine}/>{t('hero.note')}</div></div><div className={styles.visual} role="img" aria-label={t('hero.visual')}><div className={styles.gridLines}/><span className={styles.coord}>JL / DIGITAL CRAFT</span><div className={styles.orbit}/><div className={styles.orbit2}/><div className={styles.brandSculpture}><div className={styles.shadow}/><img src="/favicon.svg" alt="" width="240" height="240"/><div className={styles.floor}/></div><div className={styles.designCard}><div className={styles.miniBar}><span/><span/><span/></div><div className={styles.miniLayout}><i/><div><b/><b/><b/></div></div><div className={styles.cardLabel}><Layers size={13}/>{lang==='ar'?'تصميم مُتقن':'Considered design'}</div><MousePointer2 className={styles.cursor} size={25}/></div><div className={styles.codeCard}><Code2 size={20}/><div className={styles.codeLines}><i/><i/><i/></div><span>{lang==='ar'?'بناء قابل للتطوير':'Built to grow'}</span></div><div className={styles.visualFooter}><span className={styles.statusDot}/>{t('hero.visualLabel')}<span className={styles.plus}>+</span></div></div></div><div className={styles.bottom}><a href="#studio-intro">{t('hero.scroll')}<ArrowDown size={16}/></a><span>{t('hero.visualTag')}</span></div></section>;}
+import { Link } from "react-router-dom";
+import { ArrowDown, Code2, MousePointer2, Layers } from "lucide-react";
+import { motion } from "motion/react";
+import { useLocale } from "../../hooks/useLocale";
+import { Button, Arrow } from "../ui/Elements";
+import styles from "./Hero.module.css";
+export default function Hero() {
+  const { t, path, lang } = useLocale();
+  return (
+    <section className={`${styles.hero} container`}>
+      <div className={styles.topline}>
+        <span className="eyebrow">
+          <i />
+          {t("hero.eyebrow")}
+        </span>
+        <span className={styles.edition}>01 — JREAS LAB</span>
+      </div>
+      <div className={styles.grid}>
+        <div className={styles.copy}>
+          <motion.h1 initial={{ y: 12 }} animate={{ y: 0 }}>
+            <span>{t("hero.line1")}</span>
+            <span className={styles.accent}>
+              {t("hero.line2")}
+              <span className={styles.star} aria-hidden="true">
+                ✳︎
+              </span>
+            </span>
+          </motion.h1>
+          <p>{t("hero.description")}</p>
+          <div className={styles.buttons}>
+            <Button to={path("/contact")}>{t("common.start")}</Button>
+            <Link className="text-link" to={path("/work")}>
+              {t("common.allWork")}
+              <Arrow />
+            </Link>
+          </div>
+          <div className={styles.note}>
+            <span className={styles.noteLine} />
+            {t("hero.note")}
+          </div>
+        </div>
+        <div className={styles.visual} role="img" aria-label={t("hero.visual")}>
+          <div className={styles.gridLines} />
+          <span className={styles.coord}>JL / DIGITAL CRAFT</span>
+          <div className={styles.orbit} />
+          <div className={styles.orbit2} />
+          <div className={styles.brandSculpture}>
+            <div className={styles.shadow} />
+            <img src="/favicon.svg" alt="" width="240" height="240" />
+            <div className={styles.floor} />
+          </div>
+          <div className={styles.designCard}>
+            <div className={styles.miniBar}>
+              <span />
+              <span />
+              <span />
+            </div>
+            <div className={styles.miniLayout}>
+              <i />
+              <div>
+                <b />
+                <b />
+                <b />
+              </div>
+            </div>
+            <div className={styles.cardLabel}>
+              <Layers size={13} />
+              {lang === "ar" ? "تصميم مُتقن" : "Considered design"}
+            </div>
+            <MousePointer2 className={styles.cursor} size={25} />
+          </div>
+          <div className={styles.codeCard}>
+            <Code2 size={20} />
+            <div className={styles.codeLines}>
+              <i />
+              <i />
+              <i />
+            </div>
+            <span>{lang === "ar" ? "بناء قابل للتطوير" : "Built to grow"}</span>
+          </div>
+          <div className={styles.visualFooter}>
+            <span className={styles.statusDot} />
+            {t("hero.visualLabel")}
+            <span className={styles.plus}>+</span>
+          </div>
+        </div>
+      </div>
+      <div className={styles.bottom}>
+        <a href="#studio-intro">
+          {t("hero.scroll")}
+          <ArrowDown size={16} />
+        </a>
+        <span>{t("hero.visualTag")}</span>
+      </div>
+    </section>
+  );
+}

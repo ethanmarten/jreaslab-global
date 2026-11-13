@@ -18,7 +18,7 @@ Official contact: info@jreaslab.com, +970597747340. Social URLs were observed on
 
 ## One visual system
 
-Warm off-white #F5F6F2, dark green-black #102D2C, accessible deep teal #007D70, original mint #00C2A8 used for accents, and muted sage surfaces. IBM Plex Sans Arabic and DM Sans are self-hosted via Fontsource. Two-level type hierarchy, generous spacing, thin rules, deliberate asymmetry. A lightweight CSS scene brings the original brand symbol together with interface fragments, avoiding stock hero imagery or WebGL overhead. Original concept compositions use CSS for sharp, responsive rendering without external images.
+Warm off-white #F5F6F2, dark green-black #102D2C, accessible deep teal #006E62 (darkened after measured contrast checks), original mint #00C2A8 used for accents, and muted sage surfaces. IBM Plex Sans Arabic and DM Sans are self-hosted via Fontsource. Two-level type hierarchy, generous spacing, thin rules, deliberate asymmetry. A lightweight CSS scene brings the original brand symbol together with interface fragments, avoiding stock hero imagery or WebGL overhead. Original concept compositions use CSS for sharp, responsive rendering without external images.
 
 ## Work provenance
 

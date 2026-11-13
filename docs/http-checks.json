@@ -1,0 +1,198 @@
+[
+  {
+    "url": "https://jreaslab-global.vercel.app/ar",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/services",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/services/web-development",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/services/mobile-apps",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/services/ui-ux",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/services/branding",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/services/digital-marketing",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/services/data-ai",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/work",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/work/everyday-commerce",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/work/care-booking",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/work/business-overview",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/about",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/ar/contact",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/services",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/services/web-development",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/services/mobile-apps",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/services/ui-ux",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/services/branding",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/services/digital-marketing",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/services/data-ai",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/work",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/work/everyday-commerce",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/work/care-booking",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/work/business-overview",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/about",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  },
+  {
+    "url": "https://jreaslab-global.vercel.app/en/contact",
+    "status": 200,
+    "h1": true,
+    "canonical": true,
+    "hreflang": true
+  }
+]
