@@ -26,8 +26,8 @@
   padding-block: 54px 44px;
 }
 .copy h1 {
-  font-size: clamp(58px, 6.2vw, 108px);
-  line-height: 1.25;
+  font-size: clamp(54px, 5.6vw, 96px);
+  line-height: 1.3;
   font-weight: 500;
   letter-spacing: -0.035em;
   margin: 0 0 26px;
@@ -38,14 +38,6 @@
 }
 .copy .accent {
   color: var(--teal);
-}
-.star {
-  display: inline-block;
-  font-size: 0.65em;
-  padding-inline-start: 15px;
-  color: var(--ink);
-  vertical-align: middle;
-  animation: turn 28s linear infinite;
 }
 .copy p {
   font-size: 18px;
@@ -71,208 +63,63 @@
 .noteLine {
   height: 1px;
   width: 36px;
-  background: #9aaba6;
+  background: var(--line);
 }
 .visual {
   position: relative;
-  isolation: isolate;
   aspect-ratio: 1.1;
-  background: #dbe9e1;
-  border: 1px solid #cbdcd1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background: #102b34;
+  color: #f1f7f5;
+  border: 1px solid #24424a;
   overflow: hidden;
-  border-radius: 4px 4px 100px 4px;
   direction: ltr;
 }
-.gridLines {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(#193f3010 1px, transparent 1px),
-    linear-gradient(90deg, #193f3010 1px, transparent 1px);
-  background-size: 42px 42px;
-  mask-image: linear-gradient(#000, transparent 95%);
-}
-.coord {
-  position: absolute;
-  left: 24px;
-  top: 22px;
-  font:
-    10px "DM Sans",
-    sans-serif;
-  letter-spacing: 0.16em;
-  color: #547065;
-}
-.orbit,
-.orbit2 {
-  position: absolute;
-  width: 72%;
-  height: 72%;
-  left: 14%;
-  top: 14%;
-  border: 1px solid #a9c9b9;
-  border-radius: 50%;
-  transform: rotate(-28deg) scaleY(0.65);
-}
-.orbit2 {
-  transform: rotate(32deg) scaleY(0.8);
-  border-color: #c0d4c6;
-  width: 92%;
-  height: 92%;
-  left: 4%;
-  top: 4%;
-}
-.brandSculpture {
-  position: absolute;
-  inset: 16% 23% 17%;
-  perspective: 700px;
-}
-.brandSculpture img {
-  position: absolute;
-  inset: 0;
+.posterHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #55717b;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transform: rotate(-12deg) rotateY(-15deg);
-  filter: drop-shadow(3px 4px 0 #008c80) drop-shadow(8px 9px 0 #007c73)
-    drop-shadow(10px 16px 3px #004f4c30);
-  animation: float 7s ease-in-out infinite;
-}
-.shadow {
-  position: absolute;
-  width: 80%;
-  height: 35px;
-  bottom: 0;
-  left: 15%;
-  background: #093a273b;
-  filter: blur(20px);
-  border-radius: 50%;
-}
-.designCard {
-  position: absolute;
-  left: 6%;
-  top: 31%;
-  width: 36%;
-  background: #fcfdf9;
-  border: 1px solid #fff;
-  border-radius: 8px;
-  padding: 14px;
-  transform: rotate(-8deg);
-  box-shadow: 0 15px 50px #163a2c18;
-  animation: cardFloat 8s ease-in-out infinite;
-}
-.miniBar {
-  display: flex;
-  gap: 4px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #e7ebe4;
-}
-.miniBar > span {
-  width: 4px;
-  height: 4px;
-  background: #a6b7ae;
-  border-radius: 50%;
-}
-.miniLayout {
-  display: flex;
-  gap: 10px;
-  margin-block: 14px;
-}
-.miniLayout > i {
-  width: 45%;
-  height: 60px;
-  background: #133b33;
-  border-radius: 2px;
-  position: relative;
-}
-.miniLayout > i:after {
-  content: "";
-  position: absolute;
-  inset: 15px 20px;
-  background: #00c2a8;
-  transform: skew(-20deg);
-}
-.miniLayout > div {
-  flex: 1;
-}
-.miniLayout b {
-  display: block;
-  background: #d8e1d7;
-  height: 6px;
-  margin: 8px 0;
-}
-.miniLayout b:first-child {
-  width: 65%;
-  background: #9ab6a6;
-}
-.cardLabel {
   font-size: 10px;
-  color: #365c4c;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  letter-spacing: 0.07em;
 }
-.cursor {
-  position: absolute;
-  bottom: 20px;
-  right: -10px;
-  color: var(--teal);
-  fill: var(--teal);
-  stroke: #fff;
-}
-.codeCard {
-  position: absolute;
-  right: 6%;
-  top: 19%;
-  padding: 16px;
-  background: #123f39;
-  color: #b8eee1;
-  border: 1px solid #31594e;
-  border-radius: 8px;
-  width: 31%;
-  transform: rotate(9deg);
-  box-shadow: 0 20px 40px #072f2c19;
-}
-.codeLines {
-  margin: 12px 0;
-}
-.codeLines i {
+.brandSymbol {
+  width: 48%;
+  height: 48%;
+  object-fit: contain;
   display: block;
-  height: 4px;
-  background: #4a8575;
-  margin: 6px 0;
-  width: 85%;
+  margin-block: 24px;
 }
-.codeLines i:nth-child(2) {
-  width: 55%;
-  margin-left: 12px;
-  background: #00c2a8;
+.posterFooter {
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #55717b;
+  direction: inherit;
 }
-.codeLines i:nth-child(3) {
-  width: 65%;
+.posterFooter p {
+  font-size: clamp(18px, 2.1vw, 32px);
+  color: #edf5f1;
+  margin: 0 0 9px;
+  line-height: 1.5;
 }
-.codeCard > span {
-  font-size: 9px;
+.posterFooter > span {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: #bdd0ce;
 }
-.visualFooter {
-  position: absolute;
-  bottom: 26px;
-  left: 26px;
-  right: 26px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 11px;
-  color: #395e50;
+:global([dir="rtl"]) .posterFooter {
+  text-align: right;
 }
-.statusDot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #008675;
-}
-.plus {
-  margin-left: auto;
-  font-size: 24px;
+:global([data-theme="dark"]) .visual {
+  background: #101f29;
+  border-color: #314b53;
 }
 .bottom {
   display: flex;
@@ -294,27 +141,9 @@
   transform: translateY(4px);
 }
 :global([lang="en"]) .copy h1 {
-  font-size: clamp(44px, 5.2vw, 88px);
-  line-height: 1.08;
-  letter-spacing: -0.065em;
-}
-:global([lang="en"]) .star {
-  display: none;
-}
-@keyframes float {
-  50% {
-    transform: translateY(-12px) rotate(-8deg) rotateY(-8deg);
-  }
-}
-@keyframes cardFloat {
-  50% {
-    transform: translateY(9px) rotate(-5deg);
-  }
-}
-@keyframes turn {
-  to {
-    rotate: 360deg;
-  }
+  font-size: clamp(40px, 4.4vw, 76px);
+  line-height: 1.12;
+  letter-spacing: -0.055em;
 }
 @media (min-width: 1600px) {
   .grid {
@@ -332,7 +161,7 @@
     padding-top: 130px;
   }
   .copy h1 {
-    font-size: 6.6vw;
+    font-size: 6.1vw;
   }
   .grid {
     gap: 4%;
@@ -348,13 +177,13 @@
   }
   .visual {
     aspect-ratio: 0.9;
+    padding: 24px;
   }
-  .designCard {
-    width: 39%;
-    left: 4%;
+  .posterHeader {
+    font-size: 9px;
   }
-  .codeCard {
-    width: 34%;
+  .posterFooter > span {
+    font-size: 9px;
   }
 }
 @media (max-width: 700px) {
@@ -371,16 +200,13 @@
     padding: 34px 0;
   }
   .copy h1 {
-    font-size: clamp(46px, 10.3vw, 68px);
+    font-size: clamp(40px, 9.5vw, 62px);
     margin-bottom: 20px;
   }
   .copy p {
     font-size: 16px;
     line-height: 1.9;
     margin-bottom: 24px;
-  }
-  .copy .star {
-    padding-inline-start: 10px;
   }
   .buttons {
     gap: 20px;
@@ -389,19 +215,26 @@
     margin-top: 25px;
   }
   .visual {
-    aspect-ratio: 1.2;
-    border-bottom-right-radius: 70px;
+    aspect-ratio: 1.1;
+    padding: 23px;
   }
-  .brandSculpture {
-    inset: 12% 25% 15%;
+  .brandSymbol {
+    width: 43%;
+    height: 43%;
+    margin-block: 20px;
   }
-  .designCard {
-    width: 34%;
-    top: 31%;
+  .posterHeader {
+    font-size: 9px;
+    padding-bottom: 15px;
   }
-  .codeCard {
-    width: 28%;
-    top: 14%;
+  .posterFooter {
+    padding-top: 15px;
+  }
+  .posterFooter p {
+    font-size: 22px;
+  }
+  .posterFooter > span {
+    font-size: 9px;
   }
   .bottom {
     padding-top: 15px;
@@ -410,23 +243,10 @@
   .bottom > span {
     display: none;
   }
-  .visualFooter {
-    bottom: 18px;
-  }
-  .coord {
-    top: 17px;
-  }
   .topline :global(.eyebrow) {
     font-size: 10px;
   }
   :global([lang="en"]) .copy h1 {
-    font-size: clamp(42px, 9.7vw, 62px);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .brandSculpture img,
-  .designCard,
-  .star {
-    animation: none;
+    font-size: clamp(36px, 9vw, 58px);
   }
 }

@@ -7,6 +7,12 @@
   --muted: #52655d;
   --line: #d5ded5;
   --soft: #e8eee6;
+  --deep: #102d2c;
+  --on-deep: #f5f6f2;
+  --button-bg: #102d2c;
+  --button-text: #fff;
+  --cta-surface: #d9e9de;
+  --contact-surface: #edf0e9;
   font-family: "IBM Plex Sans Arabic", "DM Sans", sans-serif;
   color: var(--ink);
   background: var(--paper);
@@ -141,10 +147,10 @@ main:focus {
   justify-content: space-between;
   gap: 28px;
   min-height: 57px;
-  background: var(--ink);
-  color: #fff;
+  background: var(--button-bg);
+  color: var(--button-text);
   padding: 7px 21px 7px 7px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--button-bg);
   border-radius: 40px;
   font-size: 14px;
   transition:
@@ -162,7 +168,7 @@ main:focus {
   display: grid;
   place-items: center;
   background: var(--mint);
-  color: var(--ink);
+  color: #102d2c;
   width: 41px;
   height: 41px;
   border-radius: 50%;
@@ -287,8 +293,8 @@ main:focus {
   margin-bottom: 10px;
 }
 .services-section {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--deep);
+  color: var(--on-deep);
 }
 .services-section p {
   color: #b8ccc2;
@@ -596,7 +602,7 @@ main:focus {
   line-height: 1.9;
 }
 .home-contact {
-  background: #edf0e9;
+  background: var(--contact-surface);
 }
 .contact-layout {
   display: grid;
@@ -719,7 +725,7 @@ main:focus {
 }
 .cta {
   padding-block: 75px;
-  background: #d9e9de;
+  background: var(--cta-surface);
   overflow: hidden;
 }
 .cta-inner {
@@ -744,19 +750,9 @@ main:focus {
 .cta-inner .eyebrow {
   margin-bottom: 20px;
 }
-.cta-asterisk {
-  position: absolute;
-  left: 32%;
-  top: -75px;
-  font-size: 340px;
-  line-height: 1;
-  color: #bfd6c3;
-  transform: rotate(-10deg);
-  pointer-events: none;
-}
 .footer {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--deep);
+  color: var(--on-deep);
   padding: 60px 0 22px;
 }
 .footer-top {
@@ -948,7 +944,7 @@ main:focus {
 }
 .studio-wall {
   aspect-ratio: 1.4;
-  background: var(--ink);
+  background: var(--deep);
   position: relative;
   overflow: hidden;
   color: #c7ddd1;
@@ -1395,11 +1391,6 @@ main:focus {
     font-size: 14px;
     max-width: 280px;
   }
-  .cta-asterisk {
-    font-size: 240px;
-    left: -80px;
-    top: 30px;
-  }
   .footer {
     padding-top: 45px;
   }
@@ -1557,4 +1548,26 @@ main:focus {
     opacity: 1 !important;
     transform: none !important;
   }
+}
+
+/* Keep the presentation focused on the identity and the work. */
+.eyebrow > i {
+  display: none;
+}
+.service-icon,
+.service-1 .service-icon,
+.service-2 .service-icon,
+.service-3 .service-icon,
+.service-4 .service-icon,
+.service-5 .service-icon {
+  border-radius: 10px;
+  border-style: solid;
+  transform: none;
+}
+.service-row:hover .service-icon {
+  transform: none;
+}
+.studio-wall img {
+  filter: none;
+  transform: none;
 }

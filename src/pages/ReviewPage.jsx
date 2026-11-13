@@ -18,6 +18,8 @@ export default function ReviewPage() {
       });
       setReport({
         viewport: doc.defaultView.innerWidth,
+        height: doc.defaultView.innerHeight,
+        theme: doc.documentElement.dataset.theme,
         scrollWidth: doc.documentElement.scrollWidth,
         violations: results.violations.map((v) => ({
           id: v.id,
@@ -59,6 +61,8 @@ export default function ReviewPage() {
         fontFamily: "system-ui",
         padding: 24,
         background: "#e1e6e0",
+        color: "#102d2c",
+        colorScheme: "light",
         minHeight: "100vh",
       }}
     >

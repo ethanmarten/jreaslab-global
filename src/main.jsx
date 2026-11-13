@@ -12,6 +12,7 @@ import "@fontsource/dm-sans/latin-500.css";
 import "@fontsource/dm-sans/latin-600.css";
 import "./styles/global.css";
 import "./styles/project-art.css";
+import "./styles/themes.css";
 const lang = window.location.pathname.startsWith("/en") ? "en" : "ar";
 const app = (
   <StrictMode>

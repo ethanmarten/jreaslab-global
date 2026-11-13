@@ -1,0 +1,97 @@
+:root {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #0d171c;
+  --white: #e8efed;
+  --ink: #e8efed;
+  --teal: #6edacb;
+  --muted: #afbfbd;
+  --line: #33464c;
+  --soft: #18292f;
+  --deep: #091217;
+  --on-deep: #edf4f1;
+  --button-bg: #dceae6;
+  --button-text: #102d2c;
+  --cta-surface: #1c3339;
+  --contact-surface: #12232a;
+}
+[data-theme="dark"] .button:hover {
+  background: #bdd9d0;
+  color: #102d2c;
+}
+[data-theme="dark"] .skip-link {
+  background: #dceae6;
+  color: #102d2c;
+}
+[data-theme="dark"] .button-light {
+  background: #dceae6;
+  color: #102d2c;
+}
+[data-theme="dark"] .page-content > .service-list .service-row:hover {
+  background: #18292f;
+}
+[data-theme="dark"]
+  .page-content
+  > .service-list
+  .service-row:hover
+  .service-icon {
+  background: #253e44;
+}
+[data-theme="dark"] .project-badge {
+  background: #14252eed;
+  color: #e8efed;
+  border-color: #3e5b61;
+}
+[data-theme="dark"] .filters button[aria-pressed="true"],
+[data-theme="dark"] .filters button:hover {
+  background: #dceae6;
+  color: #102d2c;
+  border-color: #dceae6;
+}
+[data-theme="dark"] .process-art {
+  background: #20373e;
+  color: #e4eeeb;
+}
+[data-theme="dark"] .process-track {
+  color: #bdd2cb;
+}
+[data-theme="dark"] .process-big-number {
+  color: #e4eeeb;
+}
+[data-theme="dark"] .process-big-number > span {
+  color: #bdd2cb;
+}
+[data-theme="dark"] .process-track i {
+  border-color: #8caaa4;
+}
+[data-theme="dark"] .process-step,
+[data-theme="dark"] .process-step:last-child {
+  border-color: #425b60;
+}
+[data-theme="dark"] .contact-form input,
+[data-theme="dark"] .contact-form select,
+[data-theme="dark"] .contact-form textarea {
+  border-color: #698289;
+}
+[data-theme="dark"] .contact-form textarea::placeholder {
+  color: #a8bebb;
+}
+[data-theme="dark"] .contact-form select option {
+  background: #12232a;
+  color: #e8efed;
+}
+[data-theme="dark"] .status-box {
+  background: #342d22;
+  color: #f1ddbf;
+  border-color: #796246;
+}
+[data-theme="dark"] .status-success {
+  background: #17372d;
+  color: #c0ead9;
+  border-color: #3c725d;
+}
+[data-theme="dark"] .intro-symbol span:nth-child(3) {
+  background: #8baaa1;
+}

@@ -7,6 +7,7 @@ export const resources = {
         work: "الأعمال",
         about: "من نحن",
         contact: "تواصل معنا",
+        talk: "لنتحدث",
       },
       common: {
         start: "لنبدأ مشروعك",
@@ -26,24 +27,27 @@ export const resources = {
         more: "لنتحدث عن فكرتك",
         notfound: "هذه الصفحة غير موجودة.",
         return: "العودة للرئيسية",
+        darkMode: "تفعيل الوضع الداكن",
+        lightMode: "تفعيل الوضع الفاتح",
+        appearance: "المظهر",
       },
       hero: {
         eyebrow: "جريس لاب — استوديو التصميم والتقنية",
-        line1: "تصميم يُقنع.",
-        line2: "وتقنية تُنجز.",
+        line1: "مواقع وتطبيقات",
+        line2: "تخدم عملك.",
         description:
-          "نصمّم ونطوّر المواقع والتطبيقات والهويات الرقمية. نبدأ بفهم ما تحتاجه، ونبني معك ما يستحق الإطلاق.",
-        note: "من أول سؤال، إلى آخر تفصيلة.",
+          "موقع يعرّف بشركتك، تطبيق يستخدمه عملاؤك، وهوية واضحة لعلامتك. نحدّد المطلوب معك، ثم نصمّمه ونطوّره حتى يصبح جاهزًا للاستخدام.",
+        note: "خطة واضحة، ومراجعة في كل مرحلة.",
         scroll: "اكتشف الاستوديو",
-        visual: "مساحة رقمية تجمع التصميم والتطوير والبيانات",
+        visual: "هوية جريس لاب للتصميم والتطوير",
         visualLabel: "من الفكرة إلى الاستخدام",
-        visualTag: "تفاصيل مترابطة. تجربة واحدة.",
+        visualTag: "تصميم وتطوير في استوديو واحد.",
       },
       intro: {
         eyebrow: "الوضوح أولًا",
-        title: "قبل أن نكتب سطرًا،\nنسأل السؤال الصحيح.",
+        title: "نبدأ بما يحتاجه\nعملك فعلًا.",
         description:
-          "ما الذي يحتاجه عملك فعلًا؟ ولمن نبنيه؟ نرتّب الإجابات معك، ثم نحوّلها إلى تصميم واضح وتنفيذ متقن. كل قرار له سبب، وكل مرحلة لها ما يمكنك مراجعته.",
+          "نتعرّف إلى عملك، ومن سيستخدم المنتج، وما المطلوب منه. بعدها نحدّد نطاق العمل والمخرجات، ونشاركك التصميم والتنفيذ على مراحل يمكنك مراجعتها.",
         link: "تعرّف إلى طريقتنا",
         principles: [
           "نفهم قبل أن نقترح",
@@ -53,7 +57,7 @@ export const resources = {
       },
       services: {
         eyebrow: "ما الذي يمكن أن نبنيه معًا؟",
-        title: "خبرات متعددة.\nعمل متّصل.",
+        title: "كيف نساعدك؟",
         description:
           "قد تحتاج موقعًا، أو تطبيقًا، أو هوية تبدأ منها. نحدّد معك نقطة البداية، ونربط التفاصيل بما يخدم عملك.",
         subservices: "ما الذي نعمل عليه؟",
@@ -64,8 +68,8 @@ export const resources = {
           "أرسل لنا ما تحتاجه، وسنحدّد معك نطاق العمل والخطوة التالية.",
       },
       work: {
-        eyebrow: "مساحة للتجربة",
-        title: "تفاصيل تُرى.\nوأفكار تُستخدم.",
+        eyebrow: "نماذج من الاستوديو",
+        title: "تصميمات قيد الاستكشاف.",
         description:
           "نماذج تصورية أعددناها لعرض طريقة التفكير في التصميم والتطوير. ليست مشاريع لعملاء أو منتجات منشورة.",
         filters: {
@@ -109,8 +113,8 @@ export const resources = {
         ],
       },
       about: {
-        eyebrow: "مساحة للعمل الجيد",
-        title: "نحبّ التصميم.\nونهتمّ بما بعده.",
+        eyebrow: "عن جريس لاب",
+        title: "استوديو للتصميم\nوالتطوير.",
         description:
           "جريس لاب استوديو للتصميم والتطوير والحلول الرقمية. نعمل مع أصحاب الأعمال والفرق التي تحتاج حضورًا أو منتجًا رقميًا واضحًا وسهل الاستخدام.",
         body: "نرى المشروع من جانبيه: ما يراه المستخدم، وما يحتاجه الفريق الذي يديره. لذلك نهتم بتجربة الاستخدام، وبجودة الكود، وبالتفاصيل التي تجعل التسليم مفهومًا والعمل قابلًا للتطوير.",
@@ -161,10 +165,13 @@ export const resources = {
           "بعد التواصل، نراجع الطلب ونحدّد معك ما يلزم لفهم نطاقه. لا توجد التزامات قبل الاتفاق.",
       },
       cta: {
-        title: "لديك مشروع\nيستحق الاهتمام؟",
-        description: "لنبدأ بما تحتاجه، ثم نضع خطة واضحة لبنائه.",
+        title: "حدّثنا\nعمّا تحتاجه.",
+        description: "أرسل فكرة المشروع أو المشكلة التي تريد حلّها.",
       },
-      footer: { line: "تصميم مدروس. تنفيذ متقن.", social: "تابع الاستوديو" },
+      footer: {
+        line: "تصميم مدروس. تنفيذ متقن.",
+        social: "تابع الاستوديو",
+      },
       seo: {
         home: "جريس لاب | تصميم وتطوير المواقع والتطبيقات",
         services: "خدمات جريس لاب",
@@ -184,6 +191,7 @@ export const resources = {
         work: "Work",
         about: "Studio",
         contact: "Contact",
+        talk: "Let's talk",
       },
       common: {
         start: "Start a project",
@@ -203,24 +211,27 @@ export const resources = {
         more: "Tell us what you have in mind",
         notfound: "This page isn’t here.",
         return: "Back to home",
+        darkMode: "Switch to dark mode",
+        lightMode: "Switch to light mode",
+        appearance: "Appearance",
       },
       hero: {
         eyebrow: "JREAS LAB — DESIGN & TECHNOLOGY STUDIO",
-        line1: "Thoughtful design.",
-        line2: "Built to work.",
+        line1: "Websites & apps.",
+        line2: "For your business.",
         description:
-          "We design and build websites, apps and digital identities. We start by understanding what you need, then work with you to make it ready for the world.",
-        note: "From the first question to the final detail.",
+          "A website for your company, an app your customers use, and an identity that holds it all together. We agree on what you need, then design and build it with you.",
+        note: "A clear scope. Room to review along the way.",
         scroll: "Discover the studio",
-        visual: "A digital workspace connecting design, development and data",
+        visual: "The Jreas Lab design and development identity",
         visualLabel: "From idea to everyday use",
-        visualTag: "Connected details. One experience.",
+        visualTag: "Design and development, in one studio.",
       },
       intro: {
         eyebrow: "CLARITY COMES FIRST",
-        title: "Before the first line,\nwe ask the right question.",
+        title: "Start with what\nyour business needs.",
         description:
-          "What does your business actually need? Who are we building for? We work through the answers with you, then turn that clarity into considered design and dependable development. Every decision has a reason. Every stage has something to review.",
+          "We get to know your business, the people using the product, and what it needs to do. Then we agree on the scope and deliverables, sharing the design and development in stages you can review.",
         link: "How we approach the work",
         principles: [
           "Understand before proposing",
@@ -230,7 +241,7 @@ export const resources = {
       },
       services: {
         eyebrow: "WHAT CAN WE BUILD TOGETHER?",
-        title: "Different disciplines.\nConnected work.",
+        title: "What do you need?",
         description:
           "A website, an app, or a visual identity to start with. We help you find the right starting point and connect the details around your business.",
         subservices: "What we work on",
@@ -241,8 +252,8 @@ export const resources = {
           "Tell us what you have in mind. We’ll work out the scope and next steps together.",
       },
       work: {
-        eyebrow: "ROOM TO EXPLORE",
-        title: "Details you can see.\nIdeas you can use.",
+        eyebrow: "FROM THE STUDIO",
+        title: "Designs we’re exploring.",
         description:
           "Original concepts exploring our approach to design and development. These are not client commissions or launched products.",
         filters: {
@@ -286,8 +297,8 @@ export const resources = {
         ],
       },
       about: {
-        eyebrow: "A PLACE FOR GOOD WORK",
-        title: "We care about design.\nAnd what happens after.",
+        eyebrow: "ABOUT JREAS LAB",
+        title: "A design and\ndevelopment studio.",
         description:
           "Jreas Lab is a design, development and digital solutions studio. We work with business owners and teams who need a clear, usable digital presence or product.",
         body: "We look at both sides of a project: what users see, and what the team managing it needs. That means attention to the experience, the code, and the details that make a handover useful and future changes practical.",
@@ -341,9 +352,9 @@ export const resources = {
           "We review your enquiry and work out what we need to understand the scope. There’s no commitment before an agreement.",
       },
       cta: {
-        title: "Something worth\nbuilding in mind?",
+        title: "Tell us what\nyou need.",
         description:
-          "Let’s start with what you need, then make a clear plan to build it.",
+          "Share the project you have in mind, or the problem you need to solve.",
       },
       footer: {
         line: "Considered design. Careful execution.",

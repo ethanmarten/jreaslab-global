@@ -14,9 +14,6 @@ export default function CallToAction() {
           <p>{t("cta.description")}</p>
         </div>
         <Button to={path("/contact")}>{t("common.start")}</Button>
-        <span className="cta-asterisk" aria-hidden="true">
-          ✳︎
-        </span>
       </div>
     </section>
   );
