@@ -57,7 +57,7 @@ Service slugs: `web-development`, `mobile-apps`, `ui-ux`, `branding`, `digital-m
 
 1. Update service and concept data in both languages together.
 2. Change interface copy in `src/i18n/resources.js`.
-3. Tokens in `src/styles/global.css`; hero/header styling in their CSS Modules.
+3. Base tokens in `src/styles/global.css`, dark tokens in `src/styles/themes.css`; hero/header styling in their CSS Modules.
 4. All three showcased projects are explicitly labelled original **design concepts**, not client commissions. Replace them with verified, approved case studies when available; preserve honest attribution and evidence for outcomes.
 5. Brand provenance and reference research: [docs/RESEARCH.md](docs/RESEARCH.md). Original logo vector is from the existing Jreas Lab identity site; the light-background version changes only the white wordmark colour. The favicon crops the original symbol's viewBox.
 
@@ -94,8 +94,14 @@ Brand assets belong to Jreas Lab. No reference-site images, code or brand assets
 
 A separate, unlinked `/__review` page provides 360/390/768/1366/1920px iframe viewports and an on-demand axe accessibility check for maintainers. It is noindex, excluded from the sitemap, and its audit code is loaded separately from the public website. It contains no privileged tools or private data.
 
+## Appearance
+
+Light and dark modes follow the system preference until a visitor chooses a mode. The choice persists locally. The desktop theme button sits beside the language control; mobile controls live inside the menu. Navigation follows the original Jreas Lab capsule layout and scroll contraction. See [theme and navigation verification](docs/THEMES_NAVIGATION.md).
+
 ## Preview screenshots
 
 ![Arabic desktop homepage](docs/desktop.jpg)
+
+![Arabic dark homepage](docs/dark.jpg)
 
 ![Arabic mobile homepage](docs/mobile.jpg)

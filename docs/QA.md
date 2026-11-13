@@ -40,7 +40,7 @@ Actual same-origin iframe viewports were used; these are browser layout checks, 
 
 The 15px difference is the browser scrollbar. None of these documents had horizontal overflow. Raw passing records: [viewport-audits.json](viewport-audits.json), [contact-audit.json](contact-audit.json), [service-audit.json](service-audit.json). During testing, contrast issues in small process labels, a concept illustration and English text on sage backgrounds were found and fixed; the table records passing checks. Automated axe checks cover these pages and rules, not every possible interaction or full accessibility certification.
 
-Screenshots: [desktop.jpg](desktop.jpg) and [mobile.jpg](mobile.jpg). The desktop capture uses the browser's approximately 1363px visible viewport. The mobile image is a clipped screenshot of the actual 390px-wide iframe viewport.
+Screenshots: [desktop.jpg](desktop.jpg) and [mobile.jpg](mobile.jpg). The desktop capture uses the browser's approximately 1363px visible viewport. The mobile image is a clipped screenshot of the actual 360px-wide iframe viewport. The latest screenshots include the light desktop, dark desktop and dark mobile modes.
 
 ## Performance limits
 
@@ -51,3 +51,9 @@ No Lighthouse score is claimed. Chromium/Lighthouse cannot launch in the code ex
 The email backend is implemented, but live transport needs a server-only Resend API key and verified sender in the new Vercel project's environment. See [CONTACT_SETUP.md](CONTACT_SETUP.md). The three portfolio studies are original concepts; verified client case studies/images can replace them later.
 
 The new production hostname is publicly reachable. Deployment protection settings were retained; no existing official domain, repository or old hosting project was modified.
+
+## Theme and navigation follow-up
+
+The persistent dark/light implementation passed lint, all 18 tests and the production build. Rechecked Arabic and English homepages at 390px in both themes: zero axe WCAG 2 A/AA and 2.1 AA violations, document width 375px. Arabic at 360px passed in both themes, document width 345px. Checks were taken after transitions settled. No horizontal overflow was observed. The final dark 360px record is [theme-audit-360-dark.json](theme-audit-360-dark.json).
+
+Verified reload persistence, mobile menu and Escape dismissal, language switching and the reference navigation contraction (800 × 62px after scrolling). No fresh production application warnings/errors were captured. See [THEMES_NAVIGATION.md](THEMES_NAVIGATION.md).
