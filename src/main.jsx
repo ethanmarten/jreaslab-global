@@ -16,3 +16,5 @@ const lang=window.location.pathname.startsWith('/en')?'en':'ar';
 const app=<StrictMode><I18nextProvider i18n={createI18n(lang)}><BrowserRouter><App/></BrowserRouter></I18nextProvider></StrictMode>;
 const root=document.getElementById('root');
 if(!document.querySelector('meta[name="robots"][content^="noindex"]')&&root.hasChildNodes()&&!root.innerHTML.includes('<!--app-->'))hydrateRoot(root,app);else createRoot(root).render(app);
+
+window.addEventListener('vite:preloadError',event=>{const key='jreas-chunk-refresh';try{const previous=Number(sessionStorage.getItem(key)||0);if(Date.now()-previous>60000){event.preventDefault();sessionStorage.setItem(key,String(Date.now()));window.location.reload();}}catch{/* Storage is optional. */}});
